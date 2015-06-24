@@ -7,6 +7,12 @@
   <version>1.0-SNAPSHOT</version>
   <name>des-fire</name>
   <url>http://maven.apache.org</url>
+  <repositories>
+    <repository>
+      <id>swt-repo</id>
+      <url>https://raw.githubusercontent.com/maven-eclipse/swt-repo/master/</url>
+    </repository>
+  </repositories>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -14,5 +20,21 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>edu.gsu.hxue</groupId>
+      <artifactId>des</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>edu.gsu.hxue</groupId>
+      <artifactId>2d-cellular-automata-presentation</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.swt</groupId>
+      <artifactId>org.eclipse.swt.gtk.linux.x86_64</artifactId>
+      <version>4.4</version>
+    </dependency>
   </dependencies>
+
 </project>

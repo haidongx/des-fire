@@ -1,0 +1,77 @@
+
+   Uncertainty Propagation in Wildland Fire Behaviour Modelling
+   ============================================================
+
+
+1. FUEL TYPE PROPERTY FILES
+---------------------------
+
+Each file in this directory describes one of 13 NFFL fuel types such
+that it can be used as an input file for the JAVA-classes "BehaveTest"
+and "BehaveDerivTest". The files are conformant with the format that
+is given by the JAVA-class "java.util.Properties".
+
+
+
+2. SHORT DESCRIPTION OF THE "PROPERTIES-FORMAT"
+-----------------------------------------------
+
+For a complete reference visit please the documentation of
+"Properties" (e.g. at
+http://java.sun.com/j2se/1.3/docs/api/java/util/Properties.html).
+Nevertheless, if you have a look at the files, you will find it very
+easy to edit them according your needs. The basic rules are:
+
+ - A line that contains only whitespace or whose first non-whitespace
+   character is an ASCII # or ! is ignored (thus, # or ! indicate
+   comment lines). 
+
+ - Each line is considered a property (a key and element pair).
+
+ - key and element are separated by the sign "=" or ":"
+
+ - element consist basically of all characters after "=" or ":".
+
+Some Example:
+  car = renault
+  number_of_loops = 100
+but, also
+  fruits = banana, apple, orange
+
+
+
+3. SHORT DESCRIPTION OF "BEHAVEDERIV-PROPERTIES-FORMAT"
+-------------------------------------------------------
+
+For the uncertainty propagation we need for every input variable
+(=key) two values (=element): the expectation and the standard
+deviation. E.g. the line
+
+    w0_d1 =    1.705                0.1705
+
+means that the variable "w0_d1" (= fuel loading of dead fuel <0.6cm)
+has an expectation value of 1.705 [kg/m2] with a standard deviation of
+0.1705 [kg/m2].
+
+If you do not specify a standard deviation the program assumes that
+the variable is a constant.
+
+4. INFO
+-------
+
+My name is Andreas Bachmann and you will find my address below. All
+the JAVA-programs and the properties files come without any warranty
+(hahahaha).
+
+Send comments to:
+          bachmann@geo.unizh.ch
+ 
+  or by letter:
+          University of Zurich
+          Deptartment of Geography
+          Geographic Information Systems Division
+          Winterthurerstr. 190
+          8057 Zurich
+          Switzerland
+
+April 2001

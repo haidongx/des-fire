@@ -1,0 +1,109 @@
+# 26.9.2000
+# NFFL-Fuel-Model 9: Hardwood litter
+#
+#
+# Original: Patricia L. Andrews, BEHAVE: Fire Behavior Prediction and
+#           Fuel Modeling System, BURN Subsystem, Part 1, General
+#			Technical Report INT-194, 1986, pp. 18/19)
+# ===================================================================
+# GIVEN VALUES:
+# -------------
+#
+#     Fuel bed depth [ft]        =   .2
+#     Moisture of extinction [%] = 30.0 
+#     Wind speed [mi/h]          =  4.0
+#     Slope [%]                  = 30.0
+#
+#    Size    Weight |     S/V    |  Moisture1 | Moisture2
+#          tons/acre     ft-1
+#    -----------------------------------------|----------
+#     d1      2.92  |   2500.000 |      3.000 |    12
+#     d2      0.41  |    109.612 |      4.000 |    13
+#     d3      2.15  |     30.000 |      5.000 |    14
+#     lh      0.    |   1500.000 |     70.000 |   170
+#     lw      0.    |   1500.000 |     70.000 |   170
+#
+#                      ros [ch/h]             |        
+#                flamelength [ft]             |        
+#
+#    Intermediary results:
+#    `````````````````````
+#    - charateristic surface-to-volume-ratio,        sigma [ft-1] = 2484
+#    - Packing ratio beta,                            rho_b/rho_p = 0.02500
+#    - Packing ratio/opt.packing ratio beta_ratio,  beta/beta_opt = 4.50
+# ......................................................................
+#    conversion factors:
+#             tons/acre * 0.2471 * 0.9842  == 0.243196 kg/m2 
+#			  lb/ft2    * 0.4536 / 0.0929  == 4.8827 kg/m2
+#             ft        * 0.3048  == m
+#             mi/h      * 0.4470  == m/s
+#             ch/h      * 0.3353  == m/min
+#             ch/h      * 0.005588 == m/s
+# ......................................................................
+#
+# METRIC VALUES:
+# --------------  
+#    Fuel bed depth [m]                   =  0.06096
+#    Windspeed [m/s]                      =  1.788
+#    Slope [degree]                       =  16.7
+#    characteristic s-t-v,  sigma [m-1]   =  8149.6062992
+# 
+#    Size    Weight |     S/V    |  Moisture1 | Moisture2
+#    ----------------------------------------------------
+#     d1      0.710 |   8202.0997|      3.000 |   12
+#     d2      0.100 |    357.612 |      4.000 |   13
+#     d3      0.036 |     98.000 |      5.000 |   14
+#     lh      0.    |   4920.000 |     70.000 |  170
+#     lw      0.    |   4920.000 |     70.000 |  170
+#
+#                       ros [m/s]             |          
+#                 flamelength [m]             |          
+#
+#       
+# ===========================================================
+#
+depth =    0.06096		0.006096
+#
+# Loadings...
+w0_d1 =    0.710		0.0710
+w0_d2 =	   0.100		0.0100
+w0_d3 =	   0.036		0.0036
+w0_lh =	   0.   		0.
+w0_lw =    0.   		0.
+####################################################
+# Fuel Moisture1
+m_d1 =     3			0.3
+m_d2 =	   4			0.4
+m_d3 =	   5			0.5
+m_lh =	  70			7
+m_lw =    70			7
+#####################################################
+# Fuel Moisture2
+#m_d1 =    3		    0. 
+#m_d2 =	   4			0. 
+#m_d3 =	   5			0. 
+#m_lh =	 170			0 
+#m_lw =  170		    0 
+#####################################################
+# S/V-Ratio
+sv_d1 =  8202.0997    820.20997
+sv_d2 =   357.6115
+sv_d3 =    98.4252
+sv_lh =  4921.2598
+sv_lw =  4921.2598
+#####################################################
+# sic est Mf(dead)
+mx  =	  25			 2.5
+asp =      0.0			20.0
+slp =     16.7			 5
+wdr =      0.0          45
+## 
+wsp =      2.3		 0.8
+#
+rho =    512.72341 
+heat = 18606.70194
+s_t =      5.5
+s_e =      1.0
+
+
+

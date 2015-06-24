@@ -1,0 +1,15 @@
+#Configuration of DES-FIRE/ARPS coupled simulation
+#Mon Apr 01 12:40:03 EDT 2013
+GISFileFolder=GISData/
+weatherUpdateInterval=100.0
+heatUpdateInterval=1800.0
+slopeFileName=GIS_slope_15.txt
+showPresentationLayer=false
+aspectFileName=GIS_aspect_15.txt
+initialWeatherFileName=weather_artificial_unchangedWind.txt
+nested=true
+scaleFactor=4
+ignitionFile=IgnitionPoints_SMC.txt
+numberOfSteps=36
+fuelFileName=GIS_fuel_15.txt
+initialContainedCells=InitialContainedCells_empty.txt

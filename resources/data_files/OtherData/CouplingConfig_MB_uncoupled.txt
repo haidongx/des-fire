@@ -1,0 +1,20 @@
+#Configuration of DES-FIRE/ARPS coupled simulation
+#Tue May 22 17:39:00 EDT 2012
+
+# GIS data
+GISFileFolder=GISData/
+fuelFileName=MooreBranch_fuel.txt
+slopeFileName=MooreBranch_slope.txt
+aspectFileName=MooreBranch_aspect.txt
+
+# Initail wind schedule
+initialWeatherFileName=weather_artificial_DEVSFIRE.txt
+
+# Coupling related data (numberOfSteps is the number of weather update steps)
+weatherUpdateInterval=60.0
+heatUpdateInterval=60
+numberOfSteps=3
+
+# Ignition
+ignitionFile=IgnitionPoints_MB.txt
+

@@ -1,0 +1,5 @@
+ncols	5
+nrows	1
+Hour	Min	Temp	wspd(m/s)	Dir	
+0	0	0	6 105	
+	

@@ -1,0 +1,34 @@
+#Configuration of DES-FIRE/ARPS coupled simulation
+#Tue May 22 17:39:00 EDT 2012
+
+# GIS data
+GISFileFolder=GISData/
+fuelFileName=fuel_fireflux.txt
+slopeFileName=slope_fireflux.txt
+aspectFileName=aspect_fireflux.txt
+
+# Initial wind schedule
+initialWeatherFileName=weather_artificial_DEVSFIRE.txt
+
+# Ignition
+ignitionFile=IgnitionPoints_Feng.txt
+laterIgnitionFile=IgnitionPoints_later_empty.txt
+
+# Initial contained cells
+initialContainedCells=InitialContainedCells_Empty.txt
+
+# Coupling related data (numberOfSteps is the number of weather update steps)
+weatherUpdateInterval=1.0
+heatUpdateInterval=1
+numberOfSteps=5
+
+# When nested is true, a grid will be modeled by nxn cells, n is the scaleFactor
+nested=false
+scaleFactor=1
+
+# The waiting threshold (in seconds)
+waitingTimeout = 60
+
+
+# If use new heat model for initial ignition cells
+useNewHeatModelForInitialIgnitionCells = false

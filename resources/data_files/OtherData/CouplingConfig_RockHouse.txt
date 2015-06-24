@@ -1,0 +1,26 @@
+#Configuration of DES-FIRE/ARPS coupled simulation
+#Tue May 22 17:39:00 EDT 2012
+
+# GIS data
+GISFileFolder=GISData/
+fuelFileName=RockHouse_fuel.txt
+slopeFileName=RockHouse_slope.txt
+aspectFileName=RockHouse_aspect.txt
+
+# Initial wind schedule
+initialWeatherFileName=weather0409_rockHouse_12hours.txt
+
+# Ignition
+ignitionFile=IgnitionPoints_RH_2.txt
+
+# Initial contained cells
+initialContainedCells=InitialContainedCells_Empty.txt
+
+# Coupling related data (numberOfSteps is the number of weather update steps)
+weatherUpdateInterval=60.0
+heatUpdateInterval=60
+numberOfSteps=3
+
+# When nested is true, a grid will be modeled by nxn cells, n is the scaleFactor
+nested=true
+scaleFactor=4

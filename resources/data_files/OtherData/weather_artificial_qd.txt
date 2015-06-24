@@ -1,0 +1,5 @@
+ncols	5
+nrows	2
+Hour	Min	Temp	wspd	Dir	
+0	0	0	5.0	270
+0	30	0	5.0	270

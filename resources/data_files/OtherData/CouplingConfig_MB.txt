@@ -1,0 +1,31 @@
+#Configuration of DES-FIRE/ARPS coupled simulation
+#Tue May 22 17:39:00 EDT 2012
+
+# GIS data
+GISFileFolder=GISData/
+fuelFileName=MooreBranch_fuel.txt
+slopeFileName=MooreBranch_slope.txt
+aspectFileName=MooreBranch_aspect.txt
+
+# Initial wind schedule
+initialWeatherFileName=weather_artificial_DEVSFIRE.txt
+
+# Ignition
+ignitionFile=IgnitionPoints_MB_corrected.txt
+laterIgnitionFile=IgnitionPoints_later_empty.txt
+
+# Initial contained cells
+initialContainedCells=InitialContainedCells_MB.txt
+
+# Coupling related data (numberOfSteps is the number of weather update steps)
+weatherUpdateInterval=1.0
+heatUpdateInterval=1
+numberOfSteps=3
+
+# When nested is true, a grid will be modeled by nxn cells, n is the scaleFactor
+nested=false
+scaleFactor=1
+
+
+# If use new heat model for initial ignition cells
+useNewHeatModelForInitialIgnitionCells = false

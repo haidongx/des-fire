@@ -15,3 +15,4 @@ bin/*
 *.iml
 __init__.py
 resources/data_files/HeatFiles/*
+target/

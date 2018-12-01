@@ -2,7 +2,7 @@
 
 des-fire is a discrete event wildfire simulation tool based on DES framework.
 
-# Researchs based on this code
+# Researches based on this code
 * [Data assimilation using sequential monte carlo methods in wildfire spread simulation](https://dl.acm.org/citation.cfm?id=2379816)
 * [Coupled fire–atmosphere modeling of wildland fire spread using DEVS-FIRE and ARPS](https://link.springer.com/article/10.1007/s11069-015-1640-y)
 
@@ -13,7 +13,7 @@ des-fire is a discrete event wildfire simulation tool based on DES framework.
   * [HaidongXue/2d-cellular-automata-presentation](https://github.com/HaidongXue/2d-cellular-automata-presentation.git)
   * [HaidongXue/des](https://github.com/HaidongXue/des.git)
 2. Maven insall all of the above
-3. Maven download dependency for this project
+3. Maven download dependencies for this project
 
 ## Use other methods
 One may also set up dependencies by other methods, e.g. package and add each of them as a jar file.

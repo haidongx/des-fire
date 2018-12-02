@@ -9,11 +9,11 @@ des-fire is a discrete event wildfire simulation tool based on DES framework.
 # Set up dependencies
 
 ## Use Maven
-1. Git pull
+1. Download dependency source code
   * [HaidongXue/2d-cellular-automata-presentation](https://github.com/HaidongXue/2d-cellular-automata-presentation.git)
   * [HaidongXue/des](https://github.com/HaidongXue/des.git)
-2. Maven insall all of the above
-3. Maven download dependencies for this project
+2. Run Maven install to build these dependencies and add them to local Maven repo.
+3. Use Maven to download dependencies for this project. The POM file has already been configured to download the above dependecies from the local repo.
 
 ## Use other methods
 One may also set up dependencies by other methods, e.g. package and add each of them as a jar file.
@@ -24,8 +24,9 @@ One may also set up dependencies by other methods, e.g. package and add each of 
 Run edu.gsu.hxue.desFire.testing.TestFireSystem. One will see the simulation on September 2000 Moore Branch Fire.
 
 ## Coupled simulation with ARPS
-Run edu.gsu.hxue.desFire.couplingWithARPS.CouplingShell with argument of a confiuration file e.g.
+Run edu.gsu.hxue.desFire.couplingWithARPS.CouplingShell with a argument of the confiuration file path.
 
+Configuration file example:
 ```
 #Configuration of DES-FIRE/ARPS coupled simulation
 #Tue May 22 17:39:00 EDT 2012
